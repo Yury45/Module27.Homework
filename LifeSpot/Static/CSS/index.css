@@ -48,10 +48,25 @@ form{
         background-color: #7d6b7f00
     }
 
+.feedback-space {
+    padding-left: 1%;
+}
+.feedback-block {
+    border: solid #0006;
+    border-radius: 15px;
+    overflow: auto;
+    margin: 1% 45% 1% 1%;
+    padding-left: 1%;
+}
 
-.submit {
+    .feedback-block, .feedback-block * {
+        background: #feeeee;
+    }
+
+.feedback-button {
+    margin-left: 1%;
     box-sizing: border-box;
-    width: 100px;
+    width: 170px;
     height: 34px;
     font-size: 16px;
     font-weight: 600;

@@ -7,7 +7,10 @@
     <script defertype="text/javascript" src="../Static/Scripts/script.js">
     </script>
     <script>
-        checkAge();
+        handletSession();
+        //checkAge();
+        sessionLog();
+        //showSpam();
     </script>
 </head>
 <body>
@@ -19,9 +22,8 @@
             <p>Прямые трансляции с улиц:</p>
             <form>
                 <input type="text" name="searchString" class="search" placeholder="Введите название видео..."
-                       oninput="inputSearching()"
+                       oninput="inputSearching(getUserInput)"
                 />
-                <input type="submit" class="submit" name="submit" value="Search" />
             </form>
         </div>
     </header>

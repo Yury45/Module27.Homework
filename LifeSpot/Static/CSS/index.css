@@ -53,6 +53,7 @@ form{
 }
 .feedback-block {
     border: solid #0006;
+    border-width: 2px;
     border-radius: 15px;
     overflow: auto;
     margin: 1% 45% 1% 1%;
@@ -60,7 +61,7 @@ form{
 }
 
     .feedback-block, .feedback-block * {
-        background: #feeeee;
+        background: #e7dfefe3;
     }
 
 .feedback-button {
@@ -96,4 +97,40 @@ body {
 
 *:Not(aside,aside *) {
     background-color: rgb(240, 230, 250);
+}
+
+.rateButton {
+    background-color: #f2cdcd;
+    border-radius: 11px;
+    border-width: thin;
+    border-color: currentColor;
+}
+
+.container {
+    display: inline-flex;
+    width: 725px;
+    height: fit-content;
+    background-color: #6c686e14;
+    padding: 20px 8px;
+    border: ridge;
+    border-color: lavender;
+}
+.container-item {
+    width: 600px;
+    height:400px;
+    justify-content: center;
+}
+
+.prev {
+    align-self: center;
+    z-index: 1;
+    order: -1;
+    margin-right: 0.6%;
+}
+
+.next {
+    z-index: 1;
+    order: 1;
+    align-self: center;
+    margin-left: 0.6%;
 }

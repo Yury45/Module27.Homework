@@ -59,7 +59,7 @@ function addRate(id) {
 let currentImageIndex = 0;
 let images = document.getElementsByClassName('container-item');
 function initialImages() {
-    for (let i = 1; i <= images.length; i++) {
+    for (let i = 1; i <= images.length-1; i++) {
         images[i].style.display = "none"
     }
 }

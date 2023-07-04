@@ -95,7 +95,7 @@ body {
     padding-left: 11%;
 }
 
-*:Not(aside,aside *) {
+*:Not(i,p,aside,aside *,img) {
     background-color: rgb(240, 230, 250);
 }
 
@@ -108,29 +108,39 @@ body {
 
 .container {
     display: inline-flex;
-    width: 725px;
-    height: fit-content;
+    min-width: 450px;
     background-color: #6c686e14;
+    width: 60%;
     padding: 20px 8px;
     border: ridge;
     border-color: lavender;
 }
 .container-item {
-    width: 600px;
-    height:400px;
-    justify-content: center;
+    flex-grow: 1;
+    width: 60%;
+    height: 390px;
+    margin: 4px;
 }
-
-.prev {
-    align-self: center;
-    z-index: 1;
-    order: -1;
-    margin-right: 0.6%;
+.arrow {
+    background-color: #e6dceb;
+    display: inline-flex;
 }
-
-.next {
-    z-index: 1;
-    order: 1;
+span i {
+    cursor: pointer;
+    border: solid black;
+    border-width: 0 6px 6px 0;
+    display: flex;
+    padding: 8px;
+    background-color: #e6dceb;
+    border-color: rgb(47 79 147);
+    justify-content: space-between;
     align-self: center;
-    margin-left: 0.6%;
+}
+.arrow-left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+.arrow-right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
 }
